@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How's my money doing?</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/stock.ico" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="profitEmojis" style="display: none">
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+      <div class="emoji">💸</div>
+    </div>
+    <div id="lossEmojis" style="display: none">
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+      <div class="emoji">😭</div>
+    </div>
+    <div id="banner">
+      <h1 id="heading">How's my money doing?</h1>
+      <img
+        id="hero-img"
+        src="assets/hero-img.svg"
+        alt="How's my money doing?"
+      />
+      <a id="main-link" href="https://hows-my-stock-performance.netlify.app/#main-app"
+        >Let's Check!</a
+      >
+    </div>
+    <div id="main-app">
+      <form class="form-style">
+        <h3 class="github-repo"><a class="github-repo-link" href="https://github.com/sh4dow007/hows-my-stock-performance">Github-Repo<span><i class="fas fa-location-arrow redirect"></i></span></a></h3>
+        <label class="label-style" for="current-price"
+          >Enter Current Stock Price:
+        </label>
+        <input
+          class="input-style"
+          type="number"
+          name="Current Stock Price"
+          id="current-price"
+        />
+        <label class="label-style" for="purchase-price"
+          >Enter Stock Purchase Price:
+        </label>
+        <input
+          class="input-style"
+          type="number"
+          name="Stock Purchase Price"
+          id="purchase-price"
+        />
+        <label class="label-style" for="stock-quantity"
+          >Enter Stock Quantity:
+        </label>
+        <input
+          class="input-style"
+          type="number"
+          name="Stock Quantity"
+          id="stock-quantity"
+        />
+        <button class="check-style" id="check">Check</button>
+      </form>
+      <div id="result" style="display: none">
+        <p id="result-text" class="result-style"></p>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="https://github.com/sh4dow007/"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/kaushal-aditya/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/Adit_kaushal"><i class="fab fa-twitter-square"></i></a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
